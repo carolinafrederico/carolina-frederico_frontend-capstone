@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Header from '../components/Header';
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import "../App.css";
 
 const RegisterPage = () => {
@@ -70,6 +71,9 @@ const RegisterPage = () => {
           </p>
         </div>
       </section>
+
+      {/* Footer */}
+      <Footer />
     </>
   );
 };

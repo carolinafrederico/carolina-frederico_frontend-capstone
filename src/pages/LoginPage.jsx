@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import "../App.css";
 
 const LoginPage = ({ error }) => {
@@ -13,17 +14,18 @@ const LoginPage = ({ error }) => {
   };
 
   return (
-    <div>
+    <>
       {/* Header */}
       <Header />
 
+      {/* Login Form */}
       <section className="container-section">
         <div className="container-content">
           <h2 className="section-title">Login</h2>
 
           {error && <div className="error">{error}</div>}
 
-          <form onSubmit={handleSubmit} className="login-form">
+          <form onSubmit={handleSubmit} className="form">
             <div className="form-group">
               <label htmlFor="email">Email:</label>
               <input
@@ -56,9 +58,10 @@ const LoginPage = ({ error }) => {
           </p>
         </div>
       </section>
-      
-      
-    </div>
+
+      {/* Footer */}
+      <Footer />
+    </>
   );
 };
 
