@@ -1,7 +1,14 @@
 import React from 'react'
 
-export default function RegisterPage() {
+import Header from '../components/Header'
+
+const RegisterPage=()=> {
   return (
-    <div>RegisterPage</div>
-  )
-}
+    <div >
+          {/* Header */}
+          <Header />
+    </div>
+  );
+};
+
+export default RegisterPage;

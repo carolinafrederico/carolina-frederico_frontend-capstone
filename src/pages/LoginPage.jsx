@@ -1,7 +1,13 @@
 import React from 'react'
+import Header from '../components/Header';
 
-export default function LoginPage() {
+const LoginPage = () => {
   return (
-    <div>LoginPage</div>
-  )
-}
+    <div >
+          {/* Header */}
+          <Header />
+    </div>
+  );
+};
+
+export default LoginPage;
