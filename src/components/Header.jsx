@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 const Header = () => {
   return (
     <header>
-      <div>PRESS ROOM</div>
+      <div className="logo">PRESS ROOM</div>
       <Navbar />
     </header>
   );

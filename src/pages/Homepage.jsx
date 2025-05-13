@@ -24,7 +24,6 @@ const HomePage = () => {
       {/* CitizenJournalism Section */}
       <CitizenJournalism />
 
-
       {/* Footer */}
       <Footer />
     </div>
