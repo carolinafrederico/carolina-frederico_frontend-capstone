@@ -1,7 +1,13 @@
 import React from 'react'
 
-export default function OpenDataPage() {
+import Header from '../components/Header'
+
+const OpenDataPage = () => {
   return (
-    <div>OpenDataPage</div>
-  )
-}
+    <div >
+          {/* Header */}
+          <Header />
+    </div>
+  );
+};
+export default OpenDataPage;

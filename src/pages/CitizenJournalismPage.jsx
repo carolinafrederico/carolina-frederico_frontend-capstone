@@ -1,7 +1,13 @@
 import React from 'react'
+import Header from '../components/Header'
 
-export default function CitizenJournalismPage() {
+const CitizenJournalismPage = () => {
   return (
-    <div>CitizenJournalismPage</div>
-  )
-}
+    <div >
+          {/* Header */}
+          <Header />
+    </div>
+  );
+};
+
+export default CitizenJournalismPage;
