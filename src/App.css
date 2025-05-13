@@ -1,0 +1,179 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #7B1E1E;
+  color: #fff;
+  margin: 0;
+}
+
+.header, .footer {
+  background-color: #7B1E1E;
+  padding: 10px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 44px;
+  font-weight: bold;
+}
+
+.navbar {
+  background-color: #7B1E1E;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-link {
+  color: #F5F5DC;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #B22222;
+  color: #fff;
+}
+
+.nav-right .nav-link {
+  background-color: #B22222;
+  padding: 10px 16px;
+  border-radius: 8px;
+}
+
+.nav-right .nav-link:hover {
+  background-color: #8B0000;
+}
+
+.hero {
+  background-image: url('/images/journalism.jpg');
+  background-size: cover;
+  padding: 50px;
+  text-align: center;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.container-section {
+  padding: 20px;
+  background-color: #7B1E1E;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container-content {
+  background-color: #F5F5DC;
+  color: #7B1E1E;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  color: #7B1E1E;
+}
+
+.articles-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.article-card {
+  flex: 1 1 30%;
+  max-width: 360px;
+  background-color: #F5F5DC;
+  color: #7B1E1E;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 16px;
+}
+
+.article-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.article-card h4 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.article-card p {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.data-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.btn {
+  background-color: #B22222;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #8B0000;
+}
+
+.get-involved-btn {
+  background-color: #B22222;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.get-involved-btn:hover {
+  background-color: #8B0000;
+}
+
+.footer {
+  background-color: #7B1E1E;
+  color: #F5F5DC;
+  padding: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 5px;
+  text-decoration: none;
+}

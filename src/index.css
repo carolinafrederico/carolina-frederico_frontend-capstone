@@ -1,0 +1,184 @@
+:root {
+  --primary-color: #780116ff; /* burgundy */
+  --accent-color: #cd2222ff; /* fire  engine red */
+  --background-color: #f5e9e2; /* Linen */
+  --text-color: #0b0014; /* Licorice */
+  --secondary-color: #d8bfaaff; /* desert sand */
+  --white: #fff;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: var(--white);
+  font-weight: bold;
+}
+
+.nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nav a {
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav a:hover {
+  background-color: var(--accent-color);
+  color: var(--white);
+  border-radius: 5px;
+}
+
+.login-link {
+  margin-left: auto;
+  padding: 0.5rem 1rem;
+  background-color: var(--accent-color);
+  color: var(--white);
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.login-link:hover {
+  background-color: var(--primary-color);
+}
+
+.hero {
+  background-image: url('../images/journalism.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 4rem;
+  text-align: center;
+  position: relative;
+}
+
+.hero-content {
+  background-color: rgba(11, 0, 20, 0.7);
+  padding: 2rem;
+  color: var(--white);
+  border-radius: 8px;
+}
+
+.hero-content .tagline {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+.read-more-btn {
+  background-color: var(--accent-color);
+  color: var(--white);
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.read-more-btn:hover {
+  background-color: var(--primary-color);
+}
+
+.featured-articles {
+  background-color: var(--primary-color);
+  padding: 2rem 0;
+}
+
+.featured-articles h3 {
+  text-align: center;
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+}
+
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  background-color: var(--secondary-color);
+  padding: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  border-radius: 8px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card h4 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: var(--text-color);
+}
+
+.card .read-more-btn {
+  background-color: var(--accent-color);
+  color: var(--white);
+  padding: 0.5rem;
+  text-decoration: none;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.card .read-more-btn:hover {
+  background-color: var(--primary-color);
+}
+.btn, .read-more-btn, .view-more-btn, .get-involved-btn {
+  background-color: var(--accent-color);
+  color: var(--white);
+  padding: 0.75rem 1.25rem;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover, .read-more-btn:hover, .view-more-btn:hover, .get-involved-btn:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-3px);
+}
