@@ -6,7 +6,7 @@ const OpenDataPage = () => {
   return (
     <div >
           {/* Header */}
-          <Header />
+          
     </div>
   );
 };

@@ -5,7 +5,7 @@ const CitizenJournalismPage = () => {
   return (
     <div >
           {/* Header */}
-          <Header />
+         Citizen Journalism
     </div>
   );
 };

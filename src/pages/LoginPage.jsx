@@ -36,7 +36,7 @@ const LoginPage = ({ setUser }) => {
   return (
     <>
       {/* Header */}
-      <Header />
+     
 
       {/* Login Form */}
       <section className="container-section">

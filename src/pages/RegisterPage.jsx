@@ -33,7 +33,7 @@ const RegisterPage = ({setUser}) => {
   return (
     <>
       {/* Header */}
-      <Header />
+     
 
       {/* Registration Form */}
       <section className="container-section">

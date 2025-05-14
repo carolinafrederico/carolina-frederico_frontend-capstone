@@ -11,7 +11,7 @@ const HomePage = () => {
   return (
     <div>
       {/* Header */}
-      <Header />
+      
 
       {/* Hero Section */}
       <Hero />

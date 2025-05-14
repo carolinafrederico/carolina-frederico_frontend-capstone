@@ -314,3 +314,50 @@ title.article-card {
   gap: 15px;  /* Space between articles */
 }
 
+.read-posts-container {
+  padding: 20px;
+  background-color: #f5dce1;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.posts-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.post-item {
+  background-color: #f5f5dc;
+  color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+.post-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.post-content {
+  font-size: 14px;
+  font: black
+}
+
+/* .btn {
+  background-color: #f5f5dc;
+  color: #7B1E1E;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #7B1E1E;
+  color: #f5f5dc;
+} */
