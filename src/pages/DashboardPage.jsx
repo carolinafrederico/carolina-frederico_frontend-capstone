@@ -7,7 +7,7 @@ import UpdatePost from "../components/UpdatePost";
 import DeletePost from "../components/DeletePost";
 import "../App.css";
 
-const DashboardPage = ({ user }) => {
+const DashboardPage = (props) => {
   return (
     <>
       
@@ -19,13 +19,13 @@ const DashboardPage = ({ user }) => {
           {/* Create Post */}
           <div className="dashboard-section">
             <h3>Create Post</h3>
-            <CreatePost />
+            <CreatePost user={props.user}/>
           </div>
 
           {/* Read Posts */}
           <div className="dashboard-section">
             <h3>All Posts</h3>
-            <ReadPosts />
+            <ReadPosts user={props.user}/>
           </div>
 
           {/* Update Post */}

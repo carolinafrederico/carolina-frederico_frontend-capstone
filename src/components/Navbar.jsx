@@ -8,16 +8,17 @@ const Navbar = ({ user, setUser }) => {
   const handleLogout = async () => {
     try {
       // Clear user state
-      setUser(null);
+      
 
       // Optionally, make a logout request to the backend to invalidate session
       await fetch("http://localhost:3001/auth/logout", {
-        method: "POST",
+        method: "GET",
         credentials: "include", // If using cookies for authentication
       });
 
       // Redirect to home or login
-      navigate("/login");
+      setUser(null);
+      navigate("/");
     } catch (error) {
       console.error("Logout failed:", error);
     }
@@ -30,6 +31,7 @@ const Navbar = ({ user, setUser }) => {
         <Link to="/articles" className="nav-link">Articles</Link>
         <Link to="/open-data" className="nav-link">Open Data</Link>
         <Link to="/citizen-journalism" className="nav-link">Citizen Journalism</Link>
+        <Link to="/dashboard" className="nav-link">Dashboard</Link>
       </div>
       <div className="nav-right">
         {user ? (

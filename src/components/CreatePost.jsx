@@ -1,25 +1,31 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-const CreatePost = () => {
+const CreatePost = (props) => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
+  const navigate = useNavigate()
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
+     const formData = { title, content, author: props.user._id}
       const response = await fetch("http://localhost:3001/post", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ title, content }),
+        body: JSON.stringify(formData),
       });
 
       const data = await response.json();
       console.log("Post Created:", data);
       setTitle("");
       setContent("");
+      
+      // navigate(`/articles/${data._id}`, { state: { post: data } });
+      navigate(`/articles/${data._id}`);
     } catch (error) {
       console.error("Error creating post:", error);
     }
