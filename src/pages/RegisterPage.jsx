@@ -2,17 +2,32 @@ import React, { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "../App.css";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-const RegisterPage = () => {
-  const [name, setName] = useState("");
+const RegisterPage = ({setUser}) => {
+  const [username, setUserName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (e) => {
+  const navigate =useNavigate();
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Name:", name);
-    console.log("Email:", email);
-    console.log("Password:", password);
+    try {
+        const newUser = {username, email, password}
+        const response = await fetch ("http://localhost:3001/auth/register", {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify(newUser)
+        }) 
+        const data = await response.json()
+        
+        setUser (data.user)
+        navigate("/dashboard")
+    } catch (error) {
+        
+    }
   };
 
   return (
@@ -30,9 +45,9 @@ const RegisterPage = () => {
               <label htmlFor="name">Name:</label>
               <input
                 type="text"
-                id="name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
+                id="username"
+                value={username}
+                onChange={(e) => setUserName(e.target.value)}
                 required
                 className="input-field"
               />
@@ -67,7 +82,8 @@ const RegisterPage = () => {
 
           <p className="redirect-link">
             Already have an account?{" "}
-            <a href="/login" className="nav-link">Login</a>
+            <Link to="/login" className="nav-link">Login</Link>
+            
           </p>
         </div>
       </section>
