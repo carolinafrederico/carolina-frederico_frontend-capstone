@@ -7,7 +7,7 @@ const OpenData = () => {
       <div className="container-content">
         <h3 className="section-title">Open Data</h3>
         <div className="data-visualization">
-          <img src="/images/board.png" alt="Data Visualization" className="data-image" />
+          <img src="/images/board.png" alt="Data Visualization" className="data-image" width="700px"/>
         </div>
         <p>Explore our latest data visualizations powered by Tableau.</p>
         <button className="btn">View More Boards</button>

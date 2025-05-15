@@ -14,7 +14,7 @@ const ApiArticles = () => {
         const response = await fetch(apiUrl);
         if (!response.ok) throw new Error("Failed to fetch articles");
         const data = await response.json();
-        setArticles(data.articles);
+        setArticles(data.articles.slice(0, 5)); // Limit to 5 articles
         setLoading(false);
       } catch (err) {
         setError(err.message);
@@ -30,8 +30,9 @@ const ApiArticles = () => {
 
   return (
     <div className="content-wrapper">
+        
       <main className="blog-container">
-        <h1>News From Around The World</h1>
+        
         {articles.length > 0 ? (
           articles.map((article, index) => (
             <div key={index} className="blog-card">
