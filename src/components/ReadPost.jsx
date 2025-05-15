@@ -59,7 +59,7 @@ const ReadPosts = ({ user }) => {
       <ul className="posts-list">
         {posts.length ? (
           posts.map((post) => {
-          // console.log(user, post, user._id===post.author)
+          
             return (
             <li key={post._id} className="post-item">
               <h3 className="post-title">{post.title}</h3>

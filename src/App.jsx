@@ -9,6 +9,7 @@ import LoginPage from "./pages/LoginPage.jsx";
 import RegisterPage from "./pages/RegisterPage.jsx";
 import DashboardPage from "./pages/DashboardPage.jsx";
 import ArticlesEditPage from "./pages/ArticlesEditPage.jsx";
+import ApiArticles from "./components/ApiArticles.jsx";
 
 import Header from "./components/Header.jsx";
 import ArticlesShowPage from "./pages/ArticlesShowPage.jsx";
@@ -25,7 +26,7 @@ export default function App() {
         <Route path="/articles" element={<ArticlesPage user={user} />} />
         <Route path="/open-data" element={<OpenDataPage />} />
         <Route path="/citizen-journalism" element={<CitizenJournalismPage />} />
-        {/* <Route path="/api-articles" element={<ApiArticles />} />  */}
+        <Route path="/api-articles" element={<ApiArticles />} /> 
         <Route path="/articles/:id" element={<ArticlesShowPage />} />
         <Route path="/articles/edit/:id" element={<ArticlesEditPage />} />
 

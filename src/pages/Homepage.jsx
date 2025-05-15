@@ -6,6 +6,7 @@ import Hero from "../components/Hero.jsx";
 import OpenData from "../components/OpenData.jsx";
 import Footer from "../components/Footer.jsx";
 import CitizenJournalism from "../components/CitizenJournalism.jsx";
+import ApiArticles from "../components/ApiArticles.jsx";
 
 const HomePage = () => {
   return (
@@ -16,8 +17,8 @@ const HomePage = () => {
       {/* Hero Section */}
       <Hero />
 
-      {/* Featured Articles Section */}
-      <FeaturedArticles />
+      {/* API Articles Section */}
+      <ApiArticles />
 
       {/* Open Data Section */}
       <OpenData />
