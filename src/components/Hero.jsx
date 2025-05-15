@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
@@ -8,7 +9,7 @@ const Hero = () => {
         <p>
           Stay informed with the latest updates on the ongoing situation. Exclusive insights and coverage from our top journalists.
         </p>
-        <button className="btn read-more">Read More</button>
+        <Link to="/articles" className="btn read-more">Read More</Link>
       </div>
     </section>
   );

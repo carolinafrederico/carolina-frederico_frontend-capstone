@@ -14,7 +14,7 @@ const ApiArticles = () => {
         const response = await fetch(apiUrl);
         if (!response.ok) throw new Error("Failed to fetch articles");
         const data = await response.json();
-        setArticles(data.articles.slice(0, 5)); // Limit to 5 articles
+        setArticles(data.articles.slice(0, 6)); // Limit to 5 articles
         setLoading(false);
       } catch (err) {
         setError(err.message);
