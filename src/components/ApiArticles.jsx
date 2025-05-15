@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import "./ApiArticles.css"; // adjust the path based on your folder structure
+import "./ApiArticles.css";
 
 const ApiArticles = () => {
   const [articles, setArticles] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const apiKey = "7ba4a580810a4bde8575f8bdd4205c7d";
+  const apiKey = import.meta.env.VITE_NEWS_API_KEY;
   const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&pageSize=8&apiKey=${apiKey}`;
 
   useEffect(() => {
@@ -30,7 +30,7 @@ const ApiArticles = () => {
 
   return (
     <div className="content-wrapper">
-      <main className="blog-container obj-width">
+      <main className="blog-container">
         <h1>News From Around The World</h1>
         {articles.length > 0 ? (
           articles.map((article, index) => (

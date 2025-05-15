@@ -1,33 +1,141 @@
-.content-wrapper {
-  padding: 20px;
-  background-color: #f5f5dc;
+/* Global CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
+body {
+    position: relative;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; 
+    color: #2C3E50;
+}
+
+
+/* Search Input */
+#search-input {
+    max-width: 300px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+    background-color: #ECF0F1;
+}
+
+#search-button {
+    padding: 10px 20px;
+    background-color: #e35b4c; /* Red for Call-to-Action */
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+#search-container {
+    display: flex;
+    align-items: center;
+}
+
+
+/* Blog Section */
 .blog-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+    padding: 1rem 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adds space between the cards */
 }
 
 .blog-card {
-  background-color: #fff;
-  border: 1px solid #7b1e1e;
-  border-radius: 8px;
-  padding: 16px;
-  width: 300px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+    flex: 1 1 300px; /* Flexible width with a minimum size */
+    max-width: 320px;
+    border: 1px solid #6C757D;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 1rem;
+    background-color: #fff;
+    transition: transform 0.3s;
+}
+
+.blog-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
 }
 
 .blog-card:hover {
-  transform: scale(1.03);
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+
+.blog-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.blog-card h2 {
+    color: #7B1E1E; /* Deep Burgundy */
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.blog-card:hover h2 {
+    color: #C0392B; /* Highlight in Red */
+}
+
+
+/* Read More Button */
 .read-more {
-  background-color: #7b1e1e;
-  color: #fff;
-  border: none;
-  padding: 8px 16px;
-  cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #C0392B; /* Red for Read More */
+    color: white;
+    font-size: 16px;
+    border: solid;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.read-more:hover {
+    background-color: #7B1E1E; /* Deep Burgundy */
+}
+
+.content-wrapper {
+    display: flex;
+}
+
+/* Mobile Responsiveness */
+@media(max-width: 500px) {
+    nav {
+        padding: 0 20px;
+    }
+
+    .navbar .logo {
+        font-size: 1.8rem;
+    }
+
+    #search-input {
+        width: 150px;
+        padding: 10px 10px;
+    }
+
+    .blog-card {
+        width: 100%;
+    }
+    #topper {
+        width: 100%;
+
+    }
 }
