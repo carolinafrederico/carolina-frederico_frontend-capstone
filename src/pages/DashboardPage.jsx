@@ -28,17 +28,7 @@ const DashboardPage = (props) => {
             <ReadPosts user={props.user}/>
           </div>
 
-          {/* Update Post */}
-          <div className="dashboard-section">
-            <h3>Update Post</h3>
-            <UpdatePost />
-          </div>
-
-          {/* Delete Post */}
-          <div className="dashboard-section">
-            <h3>Delete Post</h3>
-            <DeletePost />
-          </div>
+         
         </div>
       </section>
 

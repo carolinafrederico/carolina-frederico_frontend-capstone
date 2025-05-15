@@ -10,7 +10,7 @@ const FeaturedArticles = () => {
 
   return (
     <section className="container-section">
-      <div className="container-content">
+      <div className="featured-articles-container">
         <h3 className="section-title">Featured Articles</h3>
         <div className="articles-grid">
           {articles.map((article, index) => (

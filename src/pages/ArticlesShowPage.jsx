@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
+import Footer from "../components/Footer";
 
 export default function ArticlesShowPage() {
   // Create a state variable for the post
@@ -35,10 +36,10 @@ export default function ArticlesShowPage() {
       <h2>{post.title}</h2>
       <p>{post.content}</p>
       <p><strong>Author:</strong> {post.author}</p>
+      <Footer />
     </div>
   );
 }
-
 //create a state variable called post 
 //useEffect to fetch post from database
 //take the post data and save it to state

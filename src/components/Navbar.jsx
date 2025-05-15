@@ -11,10 +11,11 @@ const Navbar = ({ user, setUser }) => {
       
 
       // Optionally, make a logout request to the backend to invalidate session
-      await fetch("http://localhost:3001/auth/logout", {
-        method: "GET",
-        credentials: "include", // If using cookies for authentication
-      });
+      // await fetch("http://localhost:3001/auth/logout", {
+      //   method: "GET",
+      //   credentials: "include", // If using cookies for authentication
+      // });
+      await fetch("http://localhost:3001/auth/logout")
 
       // Redirect to home or login
       setUser(null);
@@ -31,7 +32,10 @@ const Navbar = ({ user, setUser }) => {
         <Link to="/articles" className="nav-link">Articles</Link>
         <Link to="/open-data" className="nav-link">Open Data</Link>
         <Link to="/citizen-journalism" className="nav-link">Citizen Journalism</Link>
+        {user ? (
         <Link to="/dashboard" className="nav-link">Dashboard</Link>
+        ): <></>}
+        
       </div>
       <div className="nav-right">
         {user ? (

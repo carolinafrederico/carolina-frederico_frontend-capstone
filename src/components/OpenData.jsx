@@ -8,7 +8,7 @@ const OpenData = () => {
       <div className="blog-container">
         <h3 className="section-title">Open Data</h3>
         <div className="data-visualization">
-          <img src="/images/board.png" alt="Data Visualization" className="data-image" width="700px"/>
+          <img src="/images/opendata1.png" alt="Data Visualization" className="data-image" width="700px"/>
         </div>
         <p>Explore our latest data visualizations powered by Tableau.</p>
         <Link to ="/open-data" className="btn">View More Boards</Link>

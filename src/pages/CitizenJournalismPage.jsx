@@ -1,12 +1,15 @@
-import React from 'react'
-import Header from '../components/Header'
+import React from 'react';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import Content from '../components/Content';
 
 const CitizenJournalismPage = () => {
   return (
-    <div >
-          {/* Header */}
-         Citizen Journalism
-    </div>
+    <>
+      <Header />
+      <Content />
+      <Footer />
+    </>
   );
 };
 

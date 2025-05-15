@@ -1,0 +1,189 @@
+/* ====================
+   CITIZEN JOURNALISM PAGE STYLES
+   ==================== */
+
+.citizen-page {
+  background-color: #7B1E1E;
+  padding: 60px 20px;
+  color: #F5F5DC;
+  min-height: 100vh;
+}
+
+.citizen-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.citizen-header h1 {
+  font-size: 2.5rem;
+  color: #F5F5DC;
+}
+
+.citizen-header p {
+  font-size: 1.1rem;
+  color: #edeaea;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ====================
+   FORM CONTAINER
+   ==================== */
+
+.citizen-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #F5F5DC;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.citizen-form-container h2 {
+  color: #7B1E1E;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.citizen-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.citizen-form label {
+  font-weight: bold;
+  color: #7B1E1E;
+  margin-bottom: 4px;
+}
+
+.citizen-form input,
+.citizen-form textarea,
+.citizen-form select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #7B1E1E;
+  background-color: #fff;
+  color: #7B1E1E;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.citizen-form input:focus,
+.citizen-form textarea:focus,
+.citizen-form select:focus {
+  border-color: #B22222;
+  background-color: #f9f9f9;
+  outline: none;
+}
+
+.citizen-form .submit-btn {
+  background-color: #B22222;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.citizen-form .submit-btn:hover {
+  background-color: #8B0000;
+}
+
+.citizen-form .consent-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.citizen-form .consent-group input {
+  width: auto;
+  margin: 0;
+}
+
+.citizen-form .error-message {
+  background-color: #B22222;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+/* ====================
+   MEDIA UPLOAD STYLES
+   ==================== */
+
+.media-upload {
+  background-color: #f5f5dc;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px dashed #7B1E1E;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.media-upload:hover {
+  background-color: #edeaea;
+}
+
+.media-upload input {
+  display: none;
+}
+
+.media-upload p {
+  color: #7B1E1E;
+  margin: 0;
+  font-weight: bold;
+}
+
+.media-preview {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.media-preview img,
+.media-preview video {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.media-preview .remove-btn {
+  background-color: #B22222;
+  color: #fff;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+
+.media-preview .remove-btn:hover {
+  background-color: #8B0000;
+}
+
+/* ====================
+   SUCCESS MESSAGE STYLES
+   ==================== */
+
+.success-message {
+  background-color: #7B1E1E;
+  color: #F5F5DC;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+}
