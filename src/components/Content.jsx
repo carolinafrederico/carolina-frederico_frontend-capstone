@@ -27,11 +27,32 @@ const Content = () => {
     setFormData({ ...formData, attachment: e.target.files[0] });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Form Data Submitted:', formData);
-  };
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     console.log('Form Data Submitted:', formData);
+//   };
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  try {
+    const response = await fetch("http://localhost:3001/submit-form", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
 
+    if (!response.ok) {
+      throw new Error("Failed to submit the form");
+    }
+
+    const result = await response.json();
+    console.log("Form successfully submitted:", result);
+
+  } catch (err) {
+    console.error("Error submitting form:", err);
+  }
+};
   return (
     <div className="container-section">
       <h2 className="section-title">Citizen Journalism: Your Voice Matters</h2>

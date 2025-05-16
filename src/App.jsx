@@ -12,6 +12,7 @@ import ArticlesEditPage from "./pages/ArticlesEditPage.jsx";
 import ApiArticles from "./components/ApiArticles.jsx";
 import Header from "./components/Header.jsx";
 import ArticlesShowPage from "./pages/ArticlesShowPage.jsx";
+import Content from "./components/Content.jsx";
 
 
 export default function App() {
@@ -46,7 +47,8 @@ export default function App() {
         <Route path="/api-articles" element={<ApiArticles />} />
         <Route path="/articles/:id" element={<ArticlesShowPage />} />
         <Route path="/articles/edit/:id" element={<ArticlesEditPage />} />
-
+        <Route path="/content" element={<Content />} />
+        
         {/* Auth Routes */}
         {user ? (
           <>

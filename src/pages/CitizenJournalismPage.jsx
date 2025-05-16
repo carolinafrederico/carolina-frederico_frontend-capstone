@@ -6,7 +6,7 @@ import Content from '../components/Content';
 const CitizenJournalismPage = () => {
   return (
     <>
-      <Header />
+     
       <Content />
       <Footer />
     </>
