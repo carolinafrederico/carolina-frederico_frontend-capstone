@@ -1,13 +1,14 @@
-import React from 'react'
-
-import Header from '../components/Header'
+import React from "react";
+import OpenDataDash from "../components/OpenDataDash";
+import Footer from "../components/Footer";  // Ensure this path is correct
 
 const OpenDataPage = () => {
   return (
-    <div >
-          {/* Header */}
-          
+    <div>
+      <OpenDataDash />
+      <Footer />
     </div>
   );
 };
+
 export default OpenDataPage;
