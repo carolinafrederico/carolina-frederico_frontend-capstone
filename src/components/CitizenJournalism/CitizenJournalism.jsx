@@ -1,5 +1,5 @@
 import React from "react";
-import "../App.css";
+import "./CitizenJournalism.css";
 import { Link } from "react-router-dom";
 const CitizenJournalism = () => {
     return (

@@ -1,0 +1,48 @@
+/* ====================
+   CONTAINER SECTION STYLES
+   ==================== */
+.container-section {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f2f2;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.blog-container {
+  background-color: #F5F5DC;
+  color: #7B1E1E;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1;
+
+}
+.blog-container p {
+  color: #fff;
+}
+
+.blog-container h3 {
+  color: #F5F5DC;
+}
+.container-section .btn {
+  background-color: #B22222;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.container-section .btn:hover {
+  background-color: #8B0000;
+}
+
+/* Adjust margins for bottom sections */
+.container-section:last-child {
+  margin-bottom: 40px;
+}

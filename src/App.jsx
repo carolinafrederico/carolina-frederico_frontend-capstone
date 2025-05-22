@@ -9,10 +9,10 @@ import LoginPage from "./pages/LoginPage.jsx";
 import RegisterPage from "./pages/RegisterPage.jsx";
 import DashboardPage from "./pages/DashboardPage.jsx";
 import ArticlesEditPage from "./pages/ArticlesEditPage.jsx";
-import ApiArticles from "./components/ApiArticles.jsx";
+import ApiArticles from "./components/ApiArticles/ApiArticles.jsx";
 import Header from "./components/Header.jsx";
 import ArticlesShowPage from "./pages/ArticlesShowPage.jsx";
-import Content from "./components/Content.jsx";
+import Content from "./components/Content/Content.jsx";
 
 
 export default function App() {

@@ -5,8 +5,8 @@ import Header from "../components/Header.jsx";
 import Hero from "../components/Hero.jsx";
 import OpenData from "../components/OpenData.jsx";
 import Footer from "../components/Footer.jsx";
-import CitizenJournalism from "../components/CitizenJournalism.jsx";
-import ApiArticles from "../components/ApiArticles.jsx";
+import CitizenJournalism from "../components/CitizenJournalism/CitizenJournalism.jsx";
+import ApiArticles from "../components/ApiArticles/ApiArticles.jsx";
 
 const HomePage = () => {
   return (
